@@ -14,6 +14,10 @@
 		0176235F21B7B592003D584F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0176235D21B7B592003D584F /* LaunchScreen.storyboard */; };
 		0176236A21B7B592003D584F /* VoidFMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0176236921B7B592003D584F /* VoidFMTests.swift */; };
 		0176237521B7B592003D584F /* VoidFMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0176237421B7B592003D584F /* VoidFMUITests.swift */; };
+		0176238421B7BC15003D584F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0176238321B7BC15003D584F /* Alamofire.framework */; };
+		0176238621B7BC1A003D584F /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0176238521B7BC1A003D584F /* Kingfisher.framework */; };
+		0176238821B7BC22003D584F /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0176238721B7BC22003D584F /* Masonry.framework */; };
+		0176238A21B7BC27003D584F /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0176238921B7BC27003D584F /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		0176237021B7B592003D584F /* VoidFMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoidFMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0176237421B7B592003D584F /* VoidFMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidFMUITests.swift; sourceTree = "<group>"; };
 		0176237621B7B592003D584F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0176238321B7BC15003D584F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		0176238521B7BC1A003D584F /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		0176238721B7BC22003D584F /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Masonry.framework; path = Carthage/Build/iOS/Masonry.framework; sourceTree = "<group>"; };
+		0176238921B7BC27003D584F /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0176238421B7BC15003D584F /* Alamofire.framework in Frameworks */,
+				0176238621B7BC1A003D584F /* Kingfisher.framework in Frameworks */,
+				0176238A21B7BC27003D584F /* SnapKit.framework in Frameworks */,
+				0176238821B7BC22003D584F /* Masonry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +93,7 @@
 				0176236821B7B592003D584F /* VoidFMTests */,
 				0176237321B7B592003D584F /* VoidFMUITests */,
 				0176235221B7B590003D584F /* Products */,
+				0176238221B7BC15003D584F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +113,7 @@
 				0176235421B7B590003D584F /* AppDelegate.swift */,
 				0176235621B7B590003D584F /* ViewController.swift */,
 				0176235821B7B590003D584F /* Main.storyboard */,
+				0176238C21B7BD65003D584F /* Net */,
 				0176235B21B7B592003D584F /* Assets.xcassets */,
 				0176235D21B7B592003D584F /* LaunchScreen.storyboard */,
 				0176236021B7B592003D584F /* Info.plist */,
@@ -125,6 +139,24 @@
 			path = VoidFMUITests;
 			sourceTree = "<group>";
 		};
+		0176238221B7BC15003D584F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0176238921B7BC27003D584F /* SnapKit.framework */,
+				0176238721B7BC22003D584F /* Masonry.framework */,
+				0176238521B7BC1A003D584F /* Kingfisher.framework */,
+				0176238321B7BC15003D584F /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0176238C21B7BD65003D584F /* Net */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +167,7 @@
 				0176234D21B7B590003D584F /* Sources */,
 				0176234E21B7B590003D584F /* Frameworks */,
 				0176234F21B7B590003D584F /* Resources */,
+				0176238B21B7BC55003D584F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -250,6 +283,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0176238B21B7BC55003D584F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Masonry.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0176234D21B7B590003D584F /* Sources */ = {
@@ -433,6 +490,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VoidFM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +511,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VoidFM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
